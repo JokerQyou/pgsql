@@ -22,8 +22,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           logout: true
-      - name: Build and push ***REMOVED***
-        id: docker_build_***REMOVED***
+      - name: Build and push
         uses: docker/build-push-action@v2
         with:
           context: .
